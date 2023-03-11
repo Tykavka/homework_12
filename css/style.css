@@ -1,0 +1,232 @@
+@import url(reset.css);
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	background-color: #E5E5E5;
+}
+
+[class*=__container] {
+	max-width: 1270px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin: 0 auto;
+}
+
+
+.cards__items {
+	padding: 60px;
+	background-color: white;
+	perspective: 400px;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	width: 100%;
+	height: 800px;
+}
+
+.cards__items:not(:last-child) {
+	margin-bottom: 50px;
+}
+
+.cards__main-title {
+	font-weight: 500;
+	font-size: 45px;
+	color: black;
+	text-align: center;
+}
+.cards__item {
+	position: relative;
+	top: 0;
+	display: inline-block;
+	background-color: red;
+	height: 200px;
+	width: 200px;
+}
+
+.cards__item:not(:last-child) {
+	margin-top: 200px;
+	margin-right: 80px;
+}
+
+.cards__title {
+	font-weight: 500;
+	font-size: 28px;
+	color: #E7E7E7;
+	text-align: center;
+	padding-top: 80px;
+}
+
+.cards__item--translate2d:hover {
+	transform: translate(20px, 20px);
+}
+.cards__item--trans-origin:hover {
+	transform-origin:top left;
+	transform: translate(20px, 20px);
+}
+.cards__item--translate3d:hover {
+	transform: translate3d(30px, 100px, 40px);
+}
+
+
+.cards__item--scale2d:hover {
+	transform: scale(1.2);
+}
+.cards__item--scale-origin:hover {
+	transform-origin:top left;
+	transform: scale(1.2);
+}
+.cards__item--scale3d:hover {
+	transform: scale3d(1.2, 1.2, 0.5);
+}
+
+.cards__item--rotate2d:hover {
+	transform: rotate(45deg);
+}
+.cards__item--rotate-origin:hover {
+	transform-origin:top left;
+	transform: rotate(45deg);
+}
+.cards__item--rotate3d:hover {
+	transform: rotate3d(1, 1, 1, 45deg);
+}
+
+.cards__item--skew2d:hover {
+	transform: skew(0deg, 30deg);
+}
+.cards__item--skew-origin:hover {
+	transform: rotateX(30deg) scale(1.5) translateZ(35px);
+}
+.cards__item--trans-style:hover {
+	transform: rotateX(200deg);
+	backface-visibility: hidden;
+}
+
+
+
+.homework__car {
+	position: relative;
+	max-width: 1000px;
+	min-height: 1000px;
+	margin-top: 500px;
+}
+.car__body {
+	width: 500;
+	height: 200px;
+	background-color: gray;
+	border: 5px solid black;
+}
+h3 {
+	color: black;
+	font-size: 35px;
+	text-align: left;
+	margin-left: 25px;
+	margin-top: 50px;
+}
+.car__wheels {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: black;
+	position: absolute;
+	top: 150px;
+	border: 10px dashed gray;
+}
+
+.car__roof {
+	position: absolute;
+	bottom: 100%;
+	left: 15px;
+	width: 0;
+	height: 0;
+	border-left: 410px solid transparent;
+	border-right: 520px solid transparent;
+	border-bottom: 200px solid gray;
+}
+.car__wheels--right {
+	right: 60px;
+}
+
+.car__wheels--left {
+	left: 60px;
+}
+.car__mirror--black {
+	position: absolute;
+	top: 20px;
+	left: -310px;
+	width: 0;
+	height: 0;
+	border-left: 310px solid transparent;
+	border-right: 390px solid transparent;
+	border-bottom: 150px solid black;
+}
+
+.car__extra {
+	position: absolute;
+	top: 100px;
+	left: 250px;
+	width: 0;
+	height: 0;
+	border-left: 0 solid transparent;
+	border-right: 200px solid transparent;
+	border-bottom: 80px solid gray;
+}
+
+.car__triangle--left {
+	position: absolute;
+	top: 130px;
+	left: 230px;
+	width: 20px;
+	height: 20px;
+	background-color: black;
+}
+.car__mirror--gray {
+	position: absolute;
+	top: 30px;
+	left: -210px;
+	width: 0;
+	height: 0;
+	border-left: 210px solid transparent;
+	border-right: 290px solid transparent;
+	border-bottom: 100px solid rgba(93, 93, 93, 0.474);
+}
+
+.car__triangle--middle {
+	position: absolute;
+	top: 27px;
+	left: -5px;
+	width: 20px;
+	height: 130px;
+	background-color: black;
+}
+.car__triangle--roof-middle {
+	position: absolute;
+	top: 100px;
+	left: 3px;
+	width: 5px;
+	height: 100px;
+	background-color: black;
+}
+.car__triangle--roof-right {
+	position: absolute;
+	top: 120px;
+	left: 246px;
+	width: 5px;
+	height: 80px;
+	background-color: black;
+}
+.car__triangle--body-middle {
+	position: absolute;
+	top: 0px;
+	left: 428px;
+	width: 5px;
+	height: 200px;
+	background-color: black;
+}
+.car__triangle--body-right {
+	position: absolute;
+	top: 0px;
+	right: 324px;
+	width: 5px;
+	height: 200px;
+	background-color: black;
+}
